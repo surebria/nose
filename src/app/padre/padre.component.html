@@ -1,0 +1,37 @@
+<body>
+  
+
+<div class="container">
+  <h1 class="titulo">{{ title }}</h1>
+  <h4 class="titulo">JOHAN RONALDO MARTINEZ RAMIREZ</h4>
+
+  <div class="d-flex flex-wrap">
+      @for (voto of votos; track voto) {
+      <div class="card mx-2" style="width: 18rem;">
+          <div class="card-body">
+              <h5 class="card-title">{{ voto.title }}</h5>
+              <button class="btn-votar" (click)="addVoto(voto.title)">Votar</button>
+          </div>
+      </div>
+      }
+  </div>
+
+  <div class="votos-info">
+      <p>Votos Emiliano Bollo: {{ c1 }}</p>
+      <p>Votos Isaac Lopez: {{ c2 }}</p>
+      <p>Votos Diego Chavarria: {{ c3 }}</p>
+      <p>Votos Daniel Padilla: {{ c4 }}</p>
+  </div>
+
+  <div class="text-center">
+      <button class="btn btn-primary" (click)="finalizar()">Finalizar</button>
+  </div>
+
+  @if (totalVotos > 0) {
+  <div class="ganador-info">
+      <h4>Total de votos: {{ totalVotos }}</h4>
+      <h4>Ganador: {{ mostrarGanador() }}</h4>
+  </div>
+  }
+</div>
+</body>

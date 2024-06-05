@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #faf8fa;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.titulo {
+  color: #6a1b9a;
+}
+
+.votos-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.votos-info p {
+  color: #6a1b9a;
+}
+
+.votos-info h4 {
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+.ganador-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ganador-info h4 {
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+.btn-votar {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.card {
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
+}
+.btn btn-primary{
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+}
